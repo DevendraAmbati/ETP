@@ -163,13 +163,13 @@ const MobileHeader = () => {
                 ← Go Back
               </button>
               <h2 className="text-xl font-semibold mb-4">{activeItem.label}</h2>
-              {activeItem.paragraph.map((item, idx) => (
+              {activeItem?.paragraph?.map((item, idx) => (
                 <p key={idx} className=" mb-3 text-sm">
                   {item}
                 </p>
               ))}
-              <div className="space-y-3 border-t-[1px] pt-2 border-gray-100 ">
-                {activeItem.content.map((item, idx) => (
+              <div className="space-y-5 border-t-[1px] pt-2 border-gray-100 ">
+                {activeItem?.content?.map((item, idx) => (
                   <Link
                     key={idx}
                     to={item.link}

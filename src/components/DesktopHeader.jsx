@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa";
+import { GoArrowRight } from "react-icons/go";
 
 const DesktopHeader = () => {
   const [isUnifiedOpen, setIsUnifiedOpen] = useState(false);
@@ -46,10 +47,15 @@ const DesktopHeader = () => {
             Partners
           </Link>
         </nav>
-
-        <button className="ml-4 px-4 py-2 rounded-full bg-[#001038] text-white">
-          Let’s Talk
-        </button>
+        <div className="flex z-50 ">
+          <select className=" px-2 py-1 text-sm">
+            <option>EN</option>
+            <option>FR</option>
+          </select>
+          <button className="ml-4 px-4 py-2 rounded-full border-[1px]  border-[#001038] text-[#001038] flex gap-4 justify-center items-center">
+            Let’s Talk <GoArrowRight />
+          </button>
+        </div>
       </div>
 
       {isUnifiedOpen && (
@@ -81,7 +87,7 @@ const DesktopHeader = () => {
           </div>
           <div>
             <h4 className="font-semibold mb-4 text-gray-900">Features</h4>
-            <ul className="space-y-6">
+            <ul className="space-y-8">
               <li>
                 <Link to="/cloud-pos" className="hover:text-blue-600">
                   Cloud POS & Retail Operations
@@ -121,7 +127,7 @@ const DesktopHeader = () => {
           </div>
           <div>
             <h4 className="font-semibold mb-4 text-gray-900 invisible">.</h4>
-            <ul className="space-y-6">
+            <ul className="space-y-8">
               <li>
                 <Link to="/product-info" className="hover:text-blue-600">
                   Product Info Management

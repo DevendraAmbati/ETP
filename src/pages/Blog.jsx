@@ -1,27 +1,32 @@
 import React from "react";
 import { GoArrowRight } from "react-icons/go";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   const blogs = [
     {
-      title: "Understanding the Rise of AI in Everyday Life",
+      id: 1,
+      title: "Understanding the Rise of AI in Everyday",
       image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
       alt: "Artificial intelligence concept",
       date: "2025-05-20",
     },
     {
+      id: 2,
       title: "Top 5 UI/UX Trends in 2025",
       image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
       alt: "UI/UX design sketches",
       date: "2025-05-08",
     },
     {
+      id: 3,
       title: "Why Tailwind CSS is So Popular",
       image: "https://images.unsplash.com/photo-1596495577886-d920f1fb7238",
       alt: "CSS code on monitor",
       date: "2025-04-22",
     },
     {
+      id: 4,
       title: "Exploring Next.js for Modern Web Apps",
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
       alt: "Next.js on code editor",
@@ -30,7 +35,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="bg-[#0C1D4F] text-white">
+    <div className="bg-[#0C1D4F] text-white max-w-[1540px] mx-auto ">
       <div className="max-w-7xl mx-auto px-4 py-12 text-center md:text-left">
         <p className="text-sm uppercase tracking-wide text-gray-300 mt-10 md:mt-0">
           Blogs
@@ -39,17 +44,17 @@ const Blog = () => {
           Discover Our Latest <br /> Articles
         </h1>
       </div>
-      <div className="max-w-7xl mx-auto px-4 mb-80">
-        <div className="bg-[#151F54]/80  rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl">
+      <div className="max-w-7xl mx-auto px-4 mb-40 md:mb-80">
+        <div className="bg-[#151F54]/90 border-[0.1px] border-gray-600 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 shadow-lg">
           <div className="w-full md:w-1/2">
             <img
               src="https://images.unsplash.com/photo-1578916171728-46686eac8d58"
               alt="Featured"
-              className="rounded-lg w-full h-full object-cover"
+              className="rounded-lg w-full  md:h-96 object-cover"
             />
           </div>
-          <div className="w-full md:w-1/2 text-left">
-            <p className="text-sm text-gray-400 mb-1">Featured</p>
+          <div className="w-full md:w-1/2 text-left ">
+            <p className="text-sm text-gray-400 mb-2">Featured</p>
             <h3 className="text-lg md:text-xl font-semibold mb-2">
               Can Data-Driven Insights Improve Your Promotions, Inventory, and
               Customer Engagement?
@@ -79,22 +84,26 @@ const Blog = () => {
       <div className="bg-[#F9F8FC]  text-[#0C1D4F] px-4 pb-12 pt-4 text-start grid justify-center">
         <h2 className="text-2xl md:text-8xl font-bold">All Blogs</h2>
         <div className="grid grid-cols-1 md:grid-cols-2  gap-8 pt-10 md:pt-20">
-          {blogs.map((blog, index) => (
-            <div key={index} class="max-w-sm rounded overflow-hidden ">
+          {blogs.map((blog) => (
+            <div key={blog.id} class="max-w-sm rounded overflow-hidden ">
               <div class=" p-2 border-[1px] border-gray-200 rounded-xl">
                 <img
-                  class="w-full  rounded-lg"
+                  class="w-full h-72  rounded-lg"
                   src={blog.image}
                   alt={blog.alt}
                 />
               </div>
               <div class=" py-4">
-                <div class="font-bold text-xl mb-2">{blog.title}</div>
-                <p class="text-gray-700 text-base">22Feb2025</p>
+                <div class="font-medium text-xl mb-2">{blog.title}</div>
+                <p class="text-gray-400 text-sm font-normal ">22Feb2025</p>
               </div>
-              <button className="flex  flex-row gap-2 items-center justify-center p-3 bg-[#001038] text-white rounded-2xl ">
+              <Link  to={`/blog/${blog.id}`}>
+              <button
+                className="flex flex-row gap-2 items-center justify-center p-3 px-5 text-base bg-[#001038] text-white rounded-full "
+              >
                 Read More <GoArrowRight />
               </button>
+              </Link>
             </div>
           ))}
         </div>
