@@ -37,11 +37,14 @@ const BlogDetails = () => {
   const blog = blogData[id];
 
   if (!blog)
-    return <div className="p-4 text-center text-red-600">Blog not found</div>;
+    return (
+      <div className="p-4 text-center text-red-600 h-screen">
+        Blog not found
+      </div>
+    );
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-10">
-      {/* Back Button */}
       <Link
         to="/"
         className="flex items-center text-blue-600 hover:underline mb-4"
@@ -49,17 +52,14 @@ const BlogDetails = () => {
         <FaArrowLeft className="mr-2" /> Back to Blogs
       </Link>
 
-      {/* Featured Image */}
       <img
         src={blog.image}
         alt={blog.title}
         className="w-full h-64 object-cover rounded-lg mb-6 shadow-md"
       />
 
-      {/* Title */}
       <h1 className="text-4xl font-bold mb-3 text-gray-800">{blog.title}</h1>
 
-      {/* Meta Info */}
       <div className="flex items-center gap-6 text-gray-600 mb-6 text-sm">
         <span className="flex items-center gap-2">
           <FaUser /> {blog.author}
@@ -69,12 +69,10 @@ const BlogDetails = () => {
         </span>
       </div>
 
-      {/* Content */}
       <article className="text-lg leading-relaxed text-gray-700 whitespace-pre-line">
         {blog.content}
       </article>
 
-      {/* Tags */}
       <div className="mt-8">
         <h3 className="text-sm font-semibold text-gray-600 mb-2">Tags:</h3>
         <div className="flex flex-wrap gap-2">

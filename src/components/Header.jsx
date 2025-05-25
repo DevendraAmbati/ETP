@@ -1,18 +1,18 @@
-import React from 'react'
-import MobileHeader from './MobileHeader'
-import DesktopHeader from './DesktopHeader'
+import React from "react";
+import MobileHeader from "./MobileHeader";
+import DesktopHeader from "./DesktopHeader";
 
 const Header = () => {
   return (
     <>
-      <div className="hidden md:block">
-      <DesktopHeader/>
+      <div className="hidden lg:block">
+        <DesktopHeader />
       </div>
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <MobileHeader />
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

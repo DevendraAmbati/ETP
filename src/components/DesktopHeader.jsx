@@ -76,10 +76,10 @@ const DesktopHeader = () => {
               </p>
             </div>
             <div className="col-span-1 flex justify-end">
-              <button className="font-bold underline ">
+              <Link to="/" className="font-bold underline ">
                 {" "}
                 Explore All Features
-              </button>
+              </Link>
             </div>
           </div>
           <div className="col-span-3 ">

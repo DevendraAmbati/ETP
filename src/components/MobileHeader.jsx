@@ -103,7 +103,7 @@ const MobileHeader = () => {
         <Link to="/" className="text-xl font-bold">
           ETP
         </Link>
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-4">
           <select className="border rounded px-2 py-1 text-sm">
             <option>EN</option>
             <option>FR</option>
@@ -114,7 +114,7 @@ const MobileHeader = () => {
         </div>
         <button
           onClick={() => setMenuOpen(true)}
-          className="md:hidden text-2xl"
+          className="lg:hidden text-2xl"
         >
           <FaBars />
         </button>
