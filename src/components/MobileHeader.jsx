@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 const menuItems = [
   {
     label: "Unified Commerce",
+    paragraph: [
+      "ETP Unify is a powerful cloud-native Unified Commerce Retail Solution. Built using MACH Architecture, it brings the best of Retail and e-commerce functionality to the user in one, easy to use, and beautiful interface. Explore All Features Features Commerc",
+    ],
     content: [
       { label: "Cloud POS & Retail Operations", link: "/cloud-pos" },
       { label: "Smart Order Management", link: "/smart-order" },
@@ -97,7 +100,9 @@ const MobileHeader = () => {
   return (
     <header className="bg-white fixed top-0 left-0 w-full z-50 shadow-md">
       <div className="flex items-center justify-between p-4">
-        <div className="text-xl font-bold">ETP</div>
+        <Link to="/" className="text-xl font-bold">
+          ETP
+        </Link>
         <div className="hidden md:flex items-center gap-4">
           <select className="border rounded px-2 py-1 text-sm">
             <option>EN</option>
@@ -158,13 +163,21 @@ const MobileHeader = () => {
                 ← Go Back
               </button>
               <h2 className="text-xl font-semibold mb-4">{activeItem.label}</h2>
-              <div className="space-y-3 pl-2">
+              {activeItem.paragraph.map((item, idx) => (
+                <p key={idx} className=" mb-3 text-sm">
+                  {item}
+                </p>
+              ))}
+              <div className="space-y-3 border-t-[1px] pt-2 border-gray-100 ">
                 {activeItem.content.map((item, idx) => (
                   <Link
                     key={idx}
                     to={item.link}
                     className="text-gray-700 text-base block hover:underline"
-                    onClick={() => setMenuOpen(false)}
+                    onClick={() => {
+                      setMenuOpen(false);
+                      setActiveItem(null);
+                    }}
                   >
                     {item.label}
                   </Link>

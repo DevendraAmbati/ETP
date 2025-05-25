@@ -1,6 +1,34 @@
 import React from "react";
+import { GoArrowRight } from "react-icons/go";
 
 const Blog = () => {
+  const blogs = [
+    {
+      title: "Understanding the Rise of AI in Everyday Life",
+      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+      alt: "Artificial intelligence concept",
+      date: "2025-05-20",
+    },
+    {
+      title: "Top 5 UI/UX Trends in 2025",
+      image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+      alt: "UI/UX design sketches",
+      date: "2025-05-08",
+    },
+    {
+      title: "Why Tailwind CSS is So Popular",
+      image: "https://images.unsplash.com/photo-1596495577886-d920f1fb7238",
+      alt: "CSS code on monitor",
+      date: "2025-04-22",
+    },
+    {
+      title: "Exploring Next.js for Modern Web Apps",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+      alt: "Next.js on code editor",
+      date: "2025-04-06",
+    },
+  ];
+
   return (
     <div className="bg-[#0C1D4F] text-white">
       <div className="max-w-7xl mx-auto px-4 py-12 text-center md:text-left">
@@ -48,8 +76,28 @@ const Blog = () => {
         </div>
       </div>
 
-      <div className="bg-[#F9F8FC]  text-[#0C1D4F] px-4 pb-12 pt-4 text-start">
-        <h2 className="text-2xl md:text-4xl font-bold">All Blogs</h2>
+      <div className="bg-[#F9F8FC]  text-[#0C1D4F] px-4 pb-12 pt-4 text-start grid justify-center">
+        <h2 className="text-2xl md:text-8xl font-bold">All Blogs</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-8 pt-10 md:pt-20">
+          {blogs.map((blog, index) => (
+            <div key={index} class="max-w-sm rounded overflow-hidden ">
+              <div class=" p-2 border-[1px] border-gray-200 rounded-xl">
+                <img
+                  class="w-full  rounded-lg"
+                  src={blog.image}
+                  alt={blog.alt}
+                />
+              </div>
+              <div class=" py-4">
+                <div class="font-bold text-xl mb-2">{blog.title}</div>
+                <p class="text-gray-700 text-base">22Feb2025</p>
+              </div>
+              <button className="flex  flex-row gap-2 items-center justify-center p-3 bg-[#001038] text-white rounded-2xl ">
+                Read More <GoArrowRight />
+              </button>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -47,7 +47,7 @@ const DesktopHeader = () => {
           </Link>
         </nav>
 
-        <button className="ml-4 px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700">
+        <button className="ml-4 px-4 py-2 rounded-full bg-[#001038] text-white">
           Let’s Talk
         </button>
       </div>
