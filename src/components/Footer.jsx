@@ -23,7 +23,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-white transition hover:opacity-75"
+                      className="text-gray-500 font-normal transition hover:text-white"
                     >
                       Unified Commerce
                     </Link>
@@ -31,7 +31,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-white transition hover:opacity-75"
+                      className="text-gray-500 font-normal transition hover:text-white"
                     >
                       Ordazzle
                     </Link>
@@ -39,7 +39,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-white transition hover:opacity-75"
+                      className="text-gray-500 font-normal transition hover:text-white"
                     >
                       Omni Channel
                     </Link>
@@ -56,7 +56,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-white transition hover:opacity-75"
+                      className="text-gray-500 font-normal transition hover:text-white"
                     >
                       Retail & Consumer Goods
                     </Link>
@@ -65,7 +65,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-white transition hover:opacity-75"
+                      className="text-gray-500 font-normal transition hover:text-white"
                     >
                       Fashion & Lifestyle
                     </Link>
@@ -74,7 +74,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-white transition hover:opacity-75"
+                      className="text-gray-500 font-normal transition hover:text-white"
                     >
                       Home & Living
                     </Link>
@@ -82,7 +82,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-white transition hover:opacity-75"
+                      className="text-gray-500 font-normal transition hover:text-white"
                     >
                       Technology & Electronics
                     </Link>
@@ -90,7 +90,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-white transition hover:opacity-75"
+                      className="text-gray-500 font-normal transition hover:text-white"
                     >
                       Speciality & Leisure
                     </Link>
@@ -107,7 +107,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-white transition hover:opacity-75"
+                      className="text-gray-500 font-normal transition hover:text-white"
                     >
                       About Us
                     </Link>
@@ -116,7 +116,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-white transition hover:opacity-75"
+                      className="text-gray-500 font-normal transition hover:text-white"
                     >
                       Join Our Team
                     </Link>
@@ -124,7 +124,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-white transition hover:opacity-75"
+                      className="text-gray-500 font-normal transition hover:text-white"
                     >
                       Events
                     </Link>
@@ -132,7 +132,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-white transition hover:opacity-75"
+                      className="text-gray-500 font-normal transition hover:text-white"
                     >
                       Newsroom
                     </Link>
@@ -140,7 +140,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-white transition hover:opacity-75"
+                      className="text-gray-500 font-normal transition hover:text-white"
                     >
                       Contact Us
                     </Link>
@@ -148,7 +148,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-white transition hover:opacity-75"
+                      className="text-gray-500 font-normal transition hover:text-white"
                     >
                       Become a Partner
                     </Link>
@@ -166,7 +166,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-white transition hover:opacity-75"
+                      className="text-gray-500 font-normal transition hover:text-white"
                     >
                       White papers
                     </Link>
@@ -174,7 +174,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-white transition hover:opacity-75"
+                      className="text-gray-500 font-normal transition hover:text-white"
                     >
                       Case Studies
                     </Link>
@@ -182,7 +182,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-white transition hover:opacity-75"
+                      className="text-gray-500 font-normal transition hover:text-white"
                     >
                       Knowledge Base
                     </Link>
@@ -190,7 +190,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-white transition hover:opacity-75"
+                      className="text-gray-500 font-normal transition hover:text-white"
                     >
                       Podcasts
                     </Link>
@@ -198,7 +198,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-white transition hover:opacity-75"
+                      className="text-gray-500 font-normal transition hover:text-white"
                     >
                       Blog
                     </Link>
@@ -206,7 +206,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-white transition hover:opacity-75"
+                      className="text-gray-500 font-normal  transition hover:text-white"
                     >
                       Testimonials
                     </Link>
@@ -214,7 +214,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-white transition hover:opacity-75"
+                      className="text-gray-500 font-normal  transition hover:text-white"
                     >
                       Product Videos
                     </Link>
@@ -234,7 +234,7 @@ const Footer = () => {
                     to="/"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-white transition hover:opacity-75"
+                    className="text-white transition hover:text-white"
                   >
                     <span className="sr-only">Facebook</span>
                     <FaFacebookSquare className="h-6 w-6" />
@@ -246,7 +246,7 @@ const Footer = () => {
                     to="/"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-white transition hover:opacity-75"
+                    className="text-white transition hover:text-white"
                   >
                     <span className="sr-only">Instagram</span>
                     <FaInstagram className="w-6 h-6" />
@@ -258,7 +258,7 @@ const Footer = () => {
                     to="/"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-white transition hover:opacity-75"
+                    className="text-white transition hover:text-white"
                   >
                     <span className="sr-only">Twitter</span>
                     <FaTwitter className="w-6 h-6" />
@@ -270,7 +270,7 @@ const Footer = () => {
                     to="/"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-white transition hover:opacity-75"
+                    className="text-white transition hover:text-white"
                   >
                     <span className="sr-only">Youtube</span>
                     <FaYoutube className="w-6 h-6" />
@@ -282,7 +282,7 @@ const Footer = () => {
                     to="/"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-white transition hover:opacity-75"
+                    className="text-white transition hover:text-white"
                   >
                     <span className="sr-only">Linkedin</span>
                     <FaLinkedin className="w-6 h-6" />
@@ -302,7 +302,7 @@ const Footer = () => {
                 <li>
                   <a
                     to="/"
-                    className="text-gray-500 transition hover:opacity-75"
+                    className="text-gray-500 transition hover:text-white"
                   >
                     Terms & Conditions
                   </a>
@@ -311,7 +311,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to="/"
-                    className="text-gray-500 transition hover:opacity-75"
+                    className="text-gray-500 transition hover:text-white"
                   >
                     Privacy Policy
                   </Link>

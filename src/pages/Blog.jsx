@@ -49,9 +49,9 @@ const Blog = () => {
   ];
 
   return (
-    <div className="bg-[#0C1D4F] text-white max-w-[1540px] mx-auto pt-10 ">
-      <div className="max-w-7xl mx-auto px-4 py-12 text-center md:text-left">
-        <p className="text-sm uppercase tracking-wide text-gray-300 mt-10 md:mt-0">
+    <div className="bg-[#0C1D4F] text-white max-w-[1540px] mx-auto md:pt-10 ">
+      <div className="max-w-7xl mx-auto px-4 py-12 text-left">
+        <p className="text-sm font-medium uppercase tracking-wide text-gray-300 mt-10 md:mt-0">
           Blogs
         </p>
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2">
