@@ -8,8 +8,11 @@ const DesktopHeader = () => {
 
   return (
     <header className="bg-white shadow-md text-sm relative z-50">
-      <div className="w-full max-w-[1440px] mx-auto px-6 py-4 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold text-[#121E44] tracking-wide">
+      <div className="w-full  max-w-[1440px] mx-auto px-6 py-4 flex justify-between items-center">
+        <Link
+          to="/"
+          className="text-2xl font-bold text-[#121E44] tracking-wide"
+        >
           ETP
         </Link>
 
@@ -32,7 +35,14 @@ const DesktopHeader = () => {
             </button>
           </div>
 
-          {["e-commerce", "omni-channel", "company", "industries", "resources", "partners"].map((path) => (
+          {[
+            "e-commerce",
+            "omni-channel",
+            "company",
+            "industries",
+            "resources",
+            "partners",
+          ].map((path) => (
             <Link
               key={path}
               to={`/${path}`}
@@ -43,7 +53,7 @@ const DesktopHeader = () => {
           ))}
         </nav>
 
-        <div className="flex items-center gap-4">
+        <div className="flex z-50 items-center gap-4">
           <select className="px-3 py-1 text-sm border rounded">
             <option>EN</option>
             <option>FR</option>
@@ -57,20 +67,27 @@ const DesktopHeader = () => {
 
       {isUnifiedOpen && (
         <div
-          className="absolute left-0 right-0 top-full bg-white z-40 shadow-lg pt-10 px-10 xl:px-20 pb-6 text-gray-700"
+          className=" absolute left-0 right-0 top-[45px] z-30 bg-white  pt-10 shadow-xl px-10 xl:px-20 pb-6 gap-5   text-gray-700"
           onMouseEnter={() => setIsUnifiedOpen(true)}
           onMouseLeave={() => setIsUnifiedOpen(false)}
         >
           <div className="grid grid-cols-3 gap-5">
             <div className="col-span-2 space-y-4">
-              <h1 className="text-xl font-semibold text-[#121E44]">Unified Commerce</h1>
+              <h1 className="text-xl font-semibold text-[#121E44]">
+                Unified Commerce
+              </h1>
               <p className="text-sm">
-                ETP Unify is a powerful cloud-native Unified Commerce Retail Solution. Built using MACH Architecture,
-                it brings the best of Retail and e-commerce functionality to the user in one, easy to use, and beautiful interface.
+                ETP Unify is a powerful cloud-native Unified Commerce Retail
+                Solution. Built using MACH Architecture, it brings the best of
+                Retail and e-commerce functionality to the user in one, easy to
+                use, and beautiful interface.
               </p>
             </div>
             <div className="flex justify-end items-start">
-              <Link to="/" className="font-semibold underline text-sm text-blue-600 hover:text-blue-800">
+              <Link
+                to="/"
+                className="font-semibold underline text-sm text-blue-600 hover:text-blue-800"
+              >
                 Explore All Features
               </Link>
             </div>
@@ -81,7 +98,7 @@ const DesktopHeader = () => {
           <div className="grid grid-cols-3 gap-6">
             <div>
               <h4 className="font-semibold mb-4 text-gray-900">Features</h4>
-              <ul className="space-y-3 text-sm">
+              <ul className="space-y-6 text-sm">
                 {[
                   ["cloud-pos", "Cloud POS & Retail Operations"],
                   ["smart-order", "Smart Order Management"],
@@ -92,7 +109,10 @@ const DesktopHeader = () => {
                   ["marketplaces", "Marketplaces & E-commerce"],
                 ].map(([path, label]) => (
                   <li key={path}>
-                    <Link to={`/${path}`} className="hover:text-blue-600 transition">
+                    <Link
+                      to={`/${path}`}
+                      className="hover:text-blue-600 transition"
+                    >
                       {label}
                     </Link>
                   </li>
@@ -102,7 +122,7 @@ const DesktopHeader = () => {
 
             <div>
               <h4 className="font-semibold mb-4 text-transparent">.</h4>
-              <ul className="space-y-3 text-sm">
+              <ul className="space-y-6 text-sm">
                 {[
                   ["product-info", "Product Info Management"],
                   ["api", "API Management"],
@@ -112,7 +132,10 @@ const DesktopHeader = () => {
                   ["mobile", "Mobile Applications"],
                 ].map(([path, label]) => (
                   <li key={path}>
-                    <Link to={`/${path}`} className="hover:text-blue-600 transition">
+                    <Link
+                      to={`/${path}`}
+                      className="hover:text-blue-600 transition"
+                    >
                       {label}
                     </Link>
                   </li>
