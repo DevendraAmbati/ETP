@@ -38,7 +38,7 @@ const BlogDetails = () => {
 
   if (!blog)
     return (
-      <div className="p-4 text-center text-red-600 h-screen">
+      <div className="p-4 text-center text-red-600 h-screen flex justify-center items-center">
         Blog not found
       </div>
     );

@@ -7,7 +7,7 @@ const DesktopHeader = () => {
   const [isUnifiedOpen, setIsUnifiedOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md text-sm relative z-50">
+    <header className="bg-white shadow-md text-sm fixed z-50  top-0 left-0 right-0">
       <div className="w-full  max-w-[1440px] mx-auto px-6 py-4 flex justify-between items-center">
         <Link
           to="/"
@@ -46,7 +46,7 @@ const DesktopHeader = () => {
             <Link
               key={path}
               to={`/${path}`}
-              className="text-gray-800 hover:text-[#697CFA] transition-colors"
+              className="text-gray-800 font-medium hover:text-[#697CFA] transition-colors"
             >
               {path.replace("-", " ").replace(/\b\w/g, (c) => c.toUpperCase())}
             </Link>
@@ -86,7 +86,7 @@ const DesktopHeader = () => {
             <div className="flex justify-end items-start">
               <Link
                 to="/"
-                className="font-semibold underline text-sm text-blue-600 hover:text-blue-800"
+                className="font-semibold underline text-sm text-black hover:text-blue-800"
               >
                 Explore All Features
               </Link>
